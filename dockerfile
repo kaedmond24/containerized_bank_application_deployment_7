@@ -4,7 +4,7 @@ RUN git clone https://github.com/kaedmond24/bank_app_deployment_6.git
 
 WORKDIR /bankapp
 
-COPY /bank_app_deployment_6 .
+COPY /bank_app_deployment_6/ /bankapp/
 
 RUN pip install -r requirements.txt
 
