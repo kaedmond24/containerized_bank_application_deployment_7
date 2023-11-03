@@ -1,0 +1,11 @@
+.terraform.lock.hcl
+terraform.tfstate
+variables.tf
+terraform.tfstate.backup
+terraform.tfvars
+.terraform/
+Deployment-instructions.md
+initTerraform/.terraform.lock.hcl
+initTerraform/terraform.tfstate
+initTerraform/terraform.tfstate.backup
+initTerraform/.terraform/
