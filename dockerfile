@@ -4,12 +4,14 @@ RUN git clone https://github.com/kaedmond24/bank_app_deployment_6.git
 
 WORKDIR /bank_app_deployment_6
 
-RUN pip install -r requirements.txt
+RUN sudo apt-get install -y python3-dev
+RUN sudo apt-get install -y libmysqlclient-dev
+RUN sudo ap-get install -y build-essential
 
+RUN pip install -r requirements.txt
 RUN pip install gunicorn
 
 RUN python database.py
-
 RUN python load_data.py
 
 EXPOSE 8000
