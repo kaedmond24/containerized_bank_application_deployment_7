@@ -2,9 +2,7 @@ FROM python:3.7
 
 RUN git clone https://github.com/kaedmond24/bank_app_deployment_6.git
 
-WORKDIR /bankapp
-
-COPY /bank_app_deployment_6/ /bankapp/
+WORKDIR /bank_app_deployment_6
 
 RUN pip install -r requirements.txt
 
