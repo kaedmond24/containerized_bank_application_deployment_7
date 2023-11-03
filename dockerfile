@@ -1,8 +1,10 @@
 FROM python:3.7
 
-RUN git clone https://github.com/kura-labs-org/c4_deployment-5.git
+RUN git clone https://github.com/kaedmond24/bank_app_deployment_6.git
 
-WORKDIR c4_deployment-5
+WORKDIR /bankapp
+
+COPY /bank_app_deployment_6 .
 
 RUN pip install -r requirements.txt
 
@@ -14,4 +16,4 @@ RUN python load_data.py
 
 EXPOSE 8000
 
-ENTRYPOINT python -m gunicorn app:app -b 0.0.0.0
+ENTRYPOINT ["python", "-m", "gunicorn", "app:app", "-b", "0.0.0.0"]
