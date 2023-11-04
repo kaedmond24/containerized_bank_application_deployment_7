@@ -28,7 +28,7 @@ pipeline {
      
     stage ('Build') {
       steps {
-          sh 'docker build -t kaedmond24/bankapp11 .'
+          sh 'docker build -t kaedmond24/bankapp .'
     }
 }
      stage ('Login') {
@@ -39,7 +39,7 @@ pipeline {
 
      stage ('Push') {
         steps {
-            sh 'docker push kaedmond24/bankapp11'
+            sh 'docker push kaedmond24/bankapp'
   }
      }
 
