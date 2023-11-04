@@ -31,7 +31,7 @@ resource "aws_ecs_task_definition" "aws-ecs-task" {
   [
   {
       "name": "bank-container-d7",
-      "image": "kedmond24/bankapp:latest",
+      "image": "kaedmond24/bankapp:latest",
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
