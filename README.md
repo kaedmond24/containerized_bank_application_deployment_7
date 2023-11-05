@@ -226,7 +226,7 @@ The following files are needed to run this deployment:
 
 ## `System Diagram`
 
-CI/CD Pipeline Architecture [Link](https://github.com/kaedmond24/bank_app_deployment_6/blob/main/c4_deployment_7.png)
+CI/CD Pipeline Architecture [Link](c4_deployment_7.png)
 
 ## `Issues`
 
