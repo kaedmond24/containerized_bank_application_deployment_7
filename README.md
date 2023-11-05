@@ -220,7 +220,7 @@ The following files are needed to run this deployment:
 
 6. Here is an overview of the bank application infrastructure. Terraform is used during the Jenkins pipeline's `Apply` phase to create a VPC with the following network resources two public subnets, two private subnets, a nat gateway with an elastic IP, one public and private route table, and an Internet gateway byway of the vpc.tf file. The next layer of the application infrastructure is the AWS ECS service configuration building upon the newly created VPC using the main.tf file. Deployment of the AWS ECS containers includes setting up a cluster with a service and task definition instructed to deploy two containers, one in each private subnet and a cloud watch log group. Finally, an application load balancer is created from the alb.tf Terraform file. In addition to the application load balancer (alb), an alb listener and target group configured to develop a central access point for the bank application. Once Terraform completes the deployment, the bank application will become accessible using this link `http://bank-lb-d7-2141356490.us-east-1.elb.amazonaws.com`.<br>
 
-    ![app_serviec_ip](images/)<br>
+    ![bank_app_container](images/bank_app_container.png)<br>
 
 <br><br>
 
